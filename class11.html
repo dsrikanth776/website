@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+   
+    <style>
+        body{
+        overflow-x: hidden;
+        background-image: url(body.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(head.1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 90px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: rgb(163, 128, 128);
+}
+img{
+    margin: 5px;
+    width: 100px;
+    height: 70px;
+}
+pre{
+    color: rgb(153, 153, 189);
+    font-size: 18px;
+    text-align: left;
+    padding-top: 40px;
+    
+
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 20px;
+  height: 250px; 
+  margin: 0px;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2{
+    font-family:elephant;
+    color: rgb(13, 13, 14);
+    text-align: center;
+    border: 1px solid rgb(231, 231, 212);
+    border-radius: 20px;
+    background-color: rgb(226, 226, 198);
+}
+p{
+    color: rgba(226, 228, 224, 0.521);
+}
+  
+aside{
+              
+  float:right;
+  padding-right: 100px;
+  padding-top: 0px;
+  
+
+}
+           
+h1{
+  font-family: elephant;
+  color: rgb(124, 175, 173);
+  padding-left: 80px;
+ 
+}
+h3{
+   font-family:elephant;
+    color: rgb(13, 13, 14);
+    text-align: center;
+    border: 1px solid rgb(231, 231, 212);
+    border-radius: 20px;
+    background-color: rgb(212, 212, 164);
+}
+
+.row-first{
+    padding: 10px;
+    
+}
+.column-first{
+    float: left;
+  width: 350px;
+  padding: 20px;
+  height: 250px; 
+  margin: 3px;
+  margin-left: 25px;
+  border-radius: 10px;
+  border: 2px solid rgb(39, 37, 37);
+
+}
+footer{
+    text-align: center;
+    background-color: rgb(199, 169, 169);
+}
+
+form{
+    background-color: skyblue;
+    border: 5px solid white;
+    text-align: center;
+    padding: 30px;
+}
+h4{
+  color: rgb(191, 142, 206);
+}
+h2:hover{
+  background-color: burlywood;
+}
+h3:hover{
+  background-color: honeydew;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
+    </style>
+</head>
+<body class="respo">
+<header>
+
+        
+
+        <ul>
+            <li>
+              
+            <img src="svm.png"></li>
+
+            <li><a href="C:\Users\Bharath Naidu\Desktop\javascript\class11.html" target="_blank">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="C:\Users\Bharath Naidu\Desktop\HTML\wedding images.html">Images</a></li>
+            <li><a href="C:\Users\Bharath Naidu\Desktop\javascript\contat.html">Contat</a></li>
+            <li><a href="#">Sinup</a></li>
+
+        </ul>
+
+
+</header>
+<br>
+<br>
+
+
+
+<div>
+    <h1><i>Indian Wedding Ideas</i></h1>
+    
+    <aside  >
+        <img src="design3.jpg" style="width: 550px; height: 300px; border-radius: 50%;">
+    </aside>
+    <br><br>
+    <pre>
+        From classy to chessy, from simple and natural to OTT,
+            check out the various ideas, tips, tricks and all that 
+     you need to know about the Indian wedding trends.
+               and plan your wedding your way.
+
+    </pre>
+
+</div>
+<br>
+<br><br><br><br><br><br>
+
+
+
+<div class="row">
+    <div class="column" style="background-color:rgb(161, 108, 95);">
+      <h2><a  href="https://www.myntra.com/wedding-dresses" target="_blank" style="color: black;">wedding dress</a> </h2>
+      <p>he traditional wedding rhyme goes: Something old, something new, something borrowed, something blue, and a sixpence in your shoe. It describes the four (technically five) objects a bride should have with her on her wedding day for good luck, and brides have been following this custom for centuries..</p>
+    </div>
+    <div class="column" style="background-color:rgb(52, 104, 72);">
+        <h2><a  href="https://www.nykaafashion.com/bridal-jewellery/c/5659" style="color: black;">wedding Jewellery</a> </h2>
+        <p>he traditional wedding rhyme goes: Something old, something new, something borrowed, something blue, and a sixpence in your shoe. It describes the four (technically five) objects a bride should have with her on her wedding day for good luck, and brides have been following this custom for centuries..</p>
+      </div>
+    <div class="column" style="background-color:rgb(18, 50, 59);">
+        <h2><a  href="#" style="color: black;">wedding dress</a> </h2>
+        <p>he traditional wedding rhyme goes: Something old, something new, something borrowed, something blue, and a sixpence in your shoe. It describes the four (technically five) objects a bride should have with her on her wedding day for good luck, and brides have been following this custom for centuries..</p>
+      </div>
+  </div>
+  <br><br>
+  
+
+</div>
+
+    <div class="row-first">
+        
+        
+        <div class="column-first" style="background-color: rgb(202, 226, 202); width: 31%; height: 50%;">
+            <h3><a href="https://www.youtube.com/watch?v=GLRbnUbvScU" target="_blank" style="color: rgb(34, 33, 33);">
+                Mehandi Function
+            </a>
+            </h3>
+            <p style="color: rgb(13, 41, 13);">
+                <a href="C:\Users\Bharath Naidu\Desktop\javascript\mehendi.jpg" target="blank">
+                <img src="mehendi.jpg" style= "width: 350px; height: 200px; border: 1px solid yellow;"></a>
+                The word “Sangeet “ means music, but when it is used as a term to describe a
+                 celebratory event during an Indian wedding it translates to Music Night or Musical party. 
+                 This musical night is a celebration of the union of not only the couple but the bonding of both families. .
+                 .. It's usually held a day before the wedding
+            </p>
+        </div>
+        <div class="column-first" style="background-color: rgb(197, 142, 105); width: 31%; height: 50%;">
+            <h3><a href="https://www.youtube.com/watch?v=AACP3NlOcb4" target="_blank" style="color: rgb(34, 33, 33);">
+                Sangeet Function
+              </a>
+            </h3>
+            <p style="color: rgb(13, 41, 13);">
+              <a href="design1.jpg" target="blank">
+                <img src="design1.jpg" style= "width: 350px; height: 200px; border: 1px solid yellow;" ></a>
+                The word “Sangeet “ means music, but when it is used as a term to describe a
+                 celebratory event during an Indian wedding it translates to Music Night or Musical party. 
+                 This musical night is a celebration of the union of not only the couple but the bonding of both families. .
+                 .. It's usually held a day before the wedding
+            </p>
+        </div>
+
+        <div class="column-first" style="background-color: rgb(202, 226, 202); width: 31%; height: 50%;">
+            <h3>
+              <a href="https://www.youtube.com/watch?v=Q1ayTT5vh7U" target="_blank" style="color: rgb(34, 33, 33);">
+                Mandap Decoration
+              </a>
+            </h3>
+            <p style="color: rgb(13, 41, 13);">
+              <a href="design2.jpg" target="blank">
+                <img src="design2.jpg" style= "width: 350px; height: 200px; border: 1px solid yellow;"></a>
+                The word “Sangeet “ means music, but when it is used as a term to describe a
+                 celebratory event during an Indian wedding it translates to Music Night or Musical party. 
+                 This musical night is a celebration of the union of not only the couple but the bonding of both families. .
+                 .. It's usually held a day before the wedding
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+
+        <h4 style="text-align: center;">CONTACT</h4>
+        <p style="text-align: center; color: black;"><i>Fan? Drop a note!</i></p>
+        <form >
+          <label>
+                Enter Name:  
+              </label>
+                <input  type="text" placeholder="Name" required name="Name">
+                <br>
+              </label>
+               Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <input  type="text" placeholder="Email" required name="Email">
+             
+             <br>
+            <label>
+             Message :
+            </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+           
+            <input  type="text" placeholder="Message" required name="Message" style="width: 300px; height: 100px; text-align:center ;">
+             <br>
+              <button  type="submit">Sumbit</button>
+        </form>
+         
+  <br>
+  <br>  
+  
+
+<footer>
+  
+
+    location: singavaram ,anantapuram,ap. <br>
+    Pho.No:9398494491,
+     Website:<a href="#"> WWW.svmeventes.com</a>
+    
+                 
+  </footer>
+
+    
+</body>
+</html>
